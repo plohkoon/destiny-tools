@@ -1,0 +1,19 @@
+
+.listItem {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    border-bottom: 2px solid #7165a3;
+    color: #7165a3;
+    cursor: pointer;
+  }
+
+  &.active,
+  &.active:hover {
+    border-bottom: 2px solid #b2a1ff;
+    color: #b2a1ff
+  }
+}

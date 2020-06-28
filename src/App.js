@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
+import './styles/App.scss';
 
-import Modal from './components/modal'
+import Content from './components/content'
 import OptionListItem from './components/optionListItem';
 
 function App() {
@@ -54,27 +54,23 @@ function App() {
     },
   ]
 
-  let [showModal, setModal] = useState(true)
   let [currentIndex, setCurrentIndex] = useState(0)
-
-  let openModal = index => {
-    setCurrentIndex(index)
-    setModal(true)
-  }
-
-  let closeModal = () => setModal(false)
-
+  
   return (
     <div className="App">
-      {
-        valuesArray.map((val, index) => {
-          return <OptionListItem name={val.name} openModal={e => openModal(index)} />
-        })
-      }
-      {
-        showModal &&
-        <Modal src={valuesArray[currentIndex].url} image={valuesArray[currentIndex].image} alt={valuesArray[currentIndex].title} closeModal={closeModal}/>
-      }
+      <ul className="menuOptions">
+        {
+          valuesArray.map((val, index) => {
+            return  <OptionListItem
+                      key={val.name}
+                      name={val.name}
+                      selectContent={e => setCurrentIndex(index)}
+                      active={index===currentIndex}
+                    />
+          })
+        }
+      </ul>
+        <Content src={valuesArray[currentIndex].url} image={valuesArray[currentIndex].image} alt={valuesArray[currentIndex].title} />
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/optionListItem.scss'
 
-export default function OptionListItem({name, openModal}) {
+export default function OptionListItem({name, selectContent, active}) {
   return (
-    <button onClick={openModal}>
+    <li className={`listItem ${active ? 'active' : ''}`} onClick={selectContent}>
       {name}
-    </button>
+    </li>
   )
 }
