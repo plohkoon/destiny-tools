@@ -3,6 +3,7 @@ import './styles/App.scss';
 
 import Content from './components/content'
 import OptionListItem from './components/optionListItem';
+import Header from './components/header';
 
 function App() {
 
@@ -55,9 +56,11 @@ function App() {
   ]
 
   let [currentIndex, setCurrentIndex] = useState(0)
+  let [menuOpen, setMenuOpen] = useState(false)
   
   return (
     <div className="App">
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <ul className="menuOptions">
         {
           valuesArray.map((val, index) => {

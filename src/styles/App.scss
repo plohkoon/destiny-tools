@@ -2,10 +2,14 @@
 .menuOptions {
   list-style: none;
   width: 100%;
-  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0 0 5px 0;
-  height: 50px;
+  min-height: 50px;
+  display: none;
+  @media(min-width: 769px) {
+    display: flex;
+  }
 }

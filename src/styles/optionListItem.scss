@@ -1,9 +1,10 @@
 
 .listItem {
-  height: 100%;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 10px;
 
   &:hover {
     border-bottom: 2px solid #7165a3;
