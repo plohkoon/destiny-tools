@@ -61,19 +61,22 @@ function App() {
   return (
     <div className="App">
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <ul className="menuOptions">
+      <ul className={`tabOptions${menuOpen ? ' active': ''}`}>
         {
           valuesArray.map((val, index) => {
             return  <OptionListItem
                       key={val.name}
                       name={val.name}
-                      selectContent={e => setCurrentIndex(index)}
+                      selectContent={e => {
+                        setCurrentIndex(index)
+                        setMenuOpen(false)
+                      }}
                       active={index===currentIndex}
                     />
           })
         }
       </ul>
-        <Content src={valuesArray[currentIndex].url} image={valuesArray[currentIndex].image} alt={valuesArray[currentIndex].title} />
+      <Content src={valuesArray[currentIndex].url} image={valuesArray[currentIndex].image} alt={valuesArray[currentIndex].title} />
     </div>
   );
 }
