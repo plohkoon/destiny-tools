@@ -9,6 +9,11 @@ function App() {
 
   let valuesArray = [
     {
+      name: 'Xurios',
+      url: 'https://wherethefuckisxur.com/',
+      image: false,
+    },
+    {
       name: 'D2 Chalice',
       url: 'https://www.d2chalice.com',
       image: false

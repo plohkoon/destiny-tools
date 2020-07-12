@@ -13,7 +13,7 @@ export default function Header({menuOpen, setMenuOpen}) {
       </div>
       <button className={`hamburger hamburger--slider${menuOpen ? ' is-active' : ''}`} onClick={e => setMenuOpen(!menuOpen)}>
         <span className='hamburger-box'>
-          <span class='hamburger-inner' />
+          <span className='hamburger-inner' />
         </span>
       </button>
     </header>
