@@ -1,10 +1,18 @@
 
+.App {
+  max-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .tabOptions {
   list-style: none;
   width: 100%;
   padding: 0;
   @media(max-width: 768px) {
     position: fixed;
+    top: 70px;
     background-color: #292929;
     margin: 0;
     overflow: hidden;
