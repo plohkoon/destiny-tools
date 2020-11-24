@@ -14,19 +14,14 @@ function App() {
       image: false,
     },
     {
-      name: 'D2 Chalice',
-      url: 'https://www.d2chalice.com',
-      image: false
+      name: 'DSC Sparrow Cliffs',
+      url: `${process.env.PUBLIC_URL}/img/dsc-sparrow-map.png`,
+      image: true
     },
     {
       name: 'The Vault',
       url: 'https://the-vault.netlify.app/',
       image: false
-    },
-    {
-      name: 'Leviathan Underbelly',
-      url: `${process.env.PUBLIC_URL}/img/leviMap.jpg`,
-      image: true
     },
     {
       name: 'Prophecy Loot',
@@ -44,19 +39,32 @@ function App() {
       image: true
     },
     {
-      name: 'Scourge Pipes',
-      url: `${process.env.PUBLIC_URL}/img/scourgeMap.png`,
-      image: true
-    },
-    {
       name: 'The Harrow Map',
       url: `${process.env.PUBLIC_URL}/img/theHarrow.png`,
       image: true
     },
+  ]
+    
+  let archiveArray = [
     {
       name: 'Zero Hour Maze',
       url: `${process.env.PUBLIC_URL}/img/zeroHour.png`,
       image: true
+    },
+    {
+      name: 'Scourge Pipes',
+      url: `${process.env.PUBLIC_URL}/img/scourgeMap.png`,
+      image: true
+    },  
+    {
+      name: 'Leviathan Underbelly',
+      url: `${process.env.PUBLIC_URL}/img/leviMap.jpg`,
+      image: true
+    },
+    {
+      name: 'D2 Chalice',
+      url: 'https://www.d2chalice.com',
+      image: false
     },
   ]
 
