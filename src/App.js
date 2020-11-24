@@ -7,7 +7,7 @@ import Header from './components/header';
 
 function App() {
 
-  let valuesArray = [
+  const valuesArray = [
     {
       name: 'Xurios',
       url: 'https://wherethefuckisxur.com/',
@@ -44,8 +44,9 @@ function App() {
       image: true
     },
   ]
-    
-  let archiveArray = [
+  // Disable because I want this to exist as a record
+  // eslint-disable-next-line
+  const archiveArray = [
     {
       name: 'Zero Hour Maze',
       url: `${process.env.PUBLIC_URL}/img/zeroHour.png`,
