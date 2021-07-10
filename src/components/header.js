@@ -3,7 +3,7 @@ import '../styles/header.scss';
 
 import icon from '../assets/icon.png'
 
-export default function Header({menuOpen, setMenuOpen}) {
+export default function Header({ menuOpen, setMenuOpen }) {
 
   return (
     <header className='header'>
