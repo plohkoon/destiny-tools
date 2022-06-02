@@ -4,7 +4,7 @@ import NewBadge from "~/components/new_badge"
 
 const HeaderLink = ({ to, children, isNew }: { to: string, children: ReactNode, isNew?: boolean }) => {
   return (
-    <Link to={to} className="pl-8 py-4 h-16 text-xl text-white relative whitespace-nowrap">
+    <Link to={to} className="pl-8 py-4 h-16 text-xl text-white relative whitespace-nowrap hover:text-gray-200 hover:underline">
       {children}
       {isNew ? <NewBadge /> : null }
     </Link>
@@ -21,13 +21,13 @@ const Header = () => {
         <HeaderLink to="/xurios">
           Xur
         </HeaderLink>
-        <HeaderLink to="/duality_loot" isNew>
+        <HeaderLink to="/duality/loot" isNew>
           Duality Loots
         </HeaderLink>
-        <HeaderLink to="/duality_maps" isNew>
+        <HeaderLink to="/duality/maps" isNew>
           Duality Maps
         </HeaderLink>
-        <HeaderLink to="/vow_symbols">
+        <HeaderLink to="/vow/symbols">
           Vow Symbol Locations
         </HeaderLink>
       </div>
