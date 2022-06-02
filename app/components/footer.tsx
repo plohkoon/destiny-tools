@@ -75,6 +75,26 @@ const activeLinks: LinksType[] = [
     ]
   },
   {
+    title: "Last Wish",
+    paths: [
+      {
+        name: "Wishes",
+        path: "/wish/wishes",
+        id: "wish-wishes"
+      },
+      {
+        name: "Riven Eyes",
+        path: "/wish/eyes",
+        id: "wish-eyes"
+      },
+      {
+        name: "Vault",
+        path: "/wish/vault",
+        id: "wish-vault"
+      }
+    ]
+  },
+  {
     title: "Pit of Heresy",
     paths: [
       {
