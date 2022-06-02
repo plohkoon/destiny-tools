@@ -18,7 +18,7 @@ const Header = () => {
         <h1 className="text-3xl pl-4 whitespace-nowrap">Destiny Tools</h1>
       </Link>
       <div className="w-full flex flex-row px-4 overflow-x-scroll overflow-y-visible no-scrollbar">
-        <HeaderLink to="/xurios">
+        <HeaderLink to="/utils/xur">
           Xur
         </HeaderLink>
         <HeaderLink to="/duality/loot" isNew>
