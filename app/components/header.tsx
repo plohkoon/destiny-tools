@@ -27,8 +27,11 @@ const Header = () => {
         <HeaderLink to="/duality/maps" isNew>
           Duality Maps
         </HeaderLink>
-        <HeaderLink to="/vow/symbols">
+        <HeaderLink to="/vow/symbol_locations">
           Vow Symbol Locations
+        </HeaderLink>
+        <HeaderLink to="/vow/symbol_names">
+          Vow Symbol Names
         </HeaderLink>
       </div>
     </header>

@@ -35,7 +35,7 @@ const Layout = ({ children }: { children: ReactNode; }) => {
       </head>
       <body>
         <Header />
-        <main className="min-h-screen min-h-[calc(100vh-12rem)]">
+        <main className="">
           {children}
         </main>
         <Footer />
