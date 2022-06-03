@@ -1,11 +1,8 @@
 import image from "~/assets/pit/theHarrow.png"
+import Image from '~/components/image'
 
 const Harrow = () => {
-  return (
-    <div className="p-4">
-      <img src={image} alt="Pit of Heresy Harrow Map" className="m-auto" />
-    </div>
-  )
+  return <Image src={image} alt="The Harrow" />
 }
 
 export default Harrow

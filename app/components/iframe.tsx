@@ -14,7 +14,7 @@ const IFrame = ({ src, title }: { src: string; title: string }) => {
         </div>
         : null
       }
-      <iframe src={src} title={title} className="w-full h-[80vh] p-4" onLoad={() => setShowSpinner(false)} sandbox="allow-forms allow-scripts" />
+      <iframe src={src} title={title} className="w-full h-[80vh] p-4" onLoad={() => setShowSpinner(false)} sandbox="allow-forms allow-scripts allow-same-origin" />
     </>
   )
 }

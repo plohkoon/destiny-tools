@@ -1,10 +1,8 @@
 import image from "~/assets/scourge/scourgeMap.png"
+import Image from '~/components/image'
+
 const Pipes = () => {
-  return (
-    <div className="p-4">
-      <img src={image} alt="Duality Loot Table" className="m-auto" />
-    </div>
-  )
+  return <Image src={image} alt="Scourge Pipes" />
 }
 
 export default Pipes

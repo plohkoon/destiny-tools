@@ -12,12 +12,12 @@ const HeaderLink = ({ to, children, isNew }: { to: string, children: ReactNode, 
 }
 const Header = () => {
   return (
-    <header className="bg-greyn text-white p-4 grid items-center space-x-5 grid-cols-1 sm:grid-cols-[200px_1fr]">
+    <header className="bg-greyn text-white p-4 grid items-center space-x-5 gap-4 grid-cols-1 sm:grid-cols-[225px_0.99fr]">
       <Link to="/" className="flex flex-row items-center">
         <img src="/favicon.ico" alt="Destiny Tools" className="h-16" />
         <h1 className="text-3xl pl-4 whitespace-nowrap">Destiny Tools</h1>
       </Link>
-      <div className="w-full flex flex-row px-4 overflow-x-scroll overflow-y-visible no-scrollbar">
+      <div className="w-full flex flex-row overflow-x-scroll overflow-y-visible no-scrollbar">
         <HeaderLink to="/utils/xur">
           Xur
         </HeaderLink>

@@ -1,11 +1,8 @@
 import image from "~/assets/vow/symbol_locations.jpg"
+import Image from '~/components/image'
 
 const SymbolLocations = () => {
-  return ( 
-    <div className="p-4">
-      <img src={image} alt="VOW symbol locations" className="max-w-5xl w-[calc(100vw-2rem)] m-auto" />
-    </div>
-  )
+  return <Image src={image} alt="Symbol Locations" />
 }
 
 export default SymbolLocations

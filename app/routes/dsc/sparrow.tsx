@@ -1,11 +1,8 @@
 import image from "~/assets/dsc/dsc-sparrow-map.png"
+import Image from "~/components/image"
 
 const Sparrow = () => {
-  return (
-    <div className="p-4">
-      <img src={image} alt="DSC Sparrow Path" className="m-auto" />
-    </div>
-  )
+  return <Image src={image} alt="DSC Sparrow Path" />
 }
 
 export default Sparrow

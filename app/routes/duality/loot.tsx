@@ -1,9 +1,8 @@
 import image from '~/assets/duality/loot.png'
+import Image from '~/components/image'
 
 const Loot = () => {
-  return <div className="p-4">
-    <img src={image} alt="Duality Loot Table" />
-  </div>
+  return <Image src={image} alt="Duality Loot" />
 }
 
 export default Loot

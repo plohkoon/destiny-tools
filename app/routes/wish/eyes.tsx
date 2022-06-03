@@ -1,10 +1,8 @@
 import image from "~/assets/last_wish/rivenEyes.png"
+import Image from '~/components/image'
+
 const Eyes = () => {
-  return (
-    <div className="p-4">
-      <img src={image} alt="Last Wish Riven Help" className="m-auto" />
-    </div>
-  )
+  return <Image src={image} alt="Last Wish Eyes" />
 }
 
 export default Eyes

@@ -1,10 +1,8 @@
 import image from "~/assets/levi/leviMap.jpg"
+import Image from '~/components/image'
+
 const Map = () => {
-  return (
-    <div className="p-4">
-      <img src={image} alt="Leviathan Routes" className="m-auto" />
-    </div>
-  )
+  return <Image src={image} alt="Leviathan Map" />
 }
 
 export default Map

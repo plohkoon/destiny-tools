@@ -1,10 +1,8 @@
 import image from "~/assets/vault/atheon_oracles.png"
+import Image from '~/components/image'
+
 const Oracles = () => {
-  return (
-    <div className="p-4">
-      <img src={image} alt="VOG Oracles" />
-    </div>
-  )
+  return <Image src={image} alt="Atheon Oracles" />
 }
 
 export default Oracles

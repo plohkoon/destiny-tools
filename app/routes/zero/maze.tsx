@@ -1,10 +1,8 @@
 import image from "~/assets/zero/zeroHour.png"
+import Image from '~/components/image'
+
 const Maze = () => {
-  return (
-    <div className="p-4">
-      <img src={image} alt="Zero Hour Maze" className="m-auto" />
-    </div>
-  )
+  return <Image src={image} alt="Zero Hour Maze" />
 }
 
 export default Maze
