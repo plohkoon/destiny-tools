@@ -21,11 +21,11 @@ const Header = () => {
         <HeaderLink to="/utils/xur">
           Xur
         </HeaderLink>
-        <HeaderLink to="/duality/loot" isNew>
-          Duality Loots
-        </HeaderLink>
         <HeaderLink to="/duality/maps" isNew>
           Duality Maps
+        </HeaderLink>
+        <HeaderLink to="/duality/loot" isNew>
+          Duality Loots
         </HeaderLink>
         <HeaderLink to="/vow/symbol_locations">
           Vow Symbol Locations
@@ -33,6 +33,7 @@ const Header = () => {
         <HeaderLink to="/vow/symbol_names">
           Vow Symbol Names
         </HeaderLink>
+        <p className="pl-8 py-4 h-16 text-md text-gray-200 relative whitespace-nowrap">See the footer for more (and older) resources</p>
       </div>
     </header>
   )
